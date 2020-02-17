@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass --watch scss/main.scss dist/css/style.css",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "RP",
+  "license": "ISC",
+  "homepage": "https://rituraj-pritish.github.io/portfolio",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

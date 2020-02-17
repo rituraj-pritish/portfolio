@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+$color-primary: #3f72af;
+$color-black: #2d2d2d;
+
+$max-width: 1366px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+  height: 60px;
+  z-index: 5;
+  border-bottom: 1px solid grey;
+  background: #fff;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__max-width-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__logo {
+    height: 55px;
+    img {
+      height: 55px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    .resume-btn {
+      margin: 0;
+    }
+
+    .icon-link {
+      margin: 0 1rem;
+      color: white;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    font-size: 2rem;
+    a {
+      margin: 2rem 0;
+    }
+  }
+}
+
+.projects {
+  text-align: center;
+  height: 100vh;
+
+  &__max-width-container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    .project {
+      display: flex;
+      width: 100%;
+
+      &__image {
+        width: 30%;
+      }
+
+      &__overview {
+        flex-grow: 1;
+        padding: 1rem 2rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #000;
+  height: 50vh;
+  max-height: 700px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px -2px #00000069;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  background: $color-primary;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: transparent;
+  box-shadow: none;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+}
