@@ -113,6 +113,27 @@ body {
       background: grey;
       width: 100%; }
 
+.skills {
+  margin-bottom: 7rem; }
+  .skills__max-width-container {
+    max-width: 1366px;
+    padding: 30px;
+    margin: 0 auto; }
+  .skills .skills-icons {
+    width: fit-content;
+    margin: 0 auto; }
+    .skills .skills-icons .skills-row {
+      display: flex;
+      align-items: flex-end;
+      margin: 3rem 0; }
+      .skills .skills-icons .skills-row .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem; }
+        .skills .skills-icons .skills-row .skill .skill-icon {
+          width: 50px; }
+
 .footer {
   background: #484848;
   max-height: 700px;
@@ -137,6 +158,19 @@ body {
     bottom: 30px;
     left: 0;
     width: 100%; }
+
+.section-title-container {
+  margin: 4rem 0; }
+  .section-title-container .section-title {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content; }
+    .section-title-container .section-title .section-title-line {
+      margin: 0 3rem;
+      width: 150px;
+      height: 2px;
+      background: #3f72af; }
 
 a {
   text-decoration: none;
@@ -183,6 +217,14 @@ a {
   .footer__max-width-container .footer__contact {
     margin-top: 5rem; } }
 
+@media (max-width: 600px) {
+  .section-title-container .section-title .section-title-line {
+    display: none; }
+  .skills .skills-icons .skills-row .skill {
+    font-size: 1.2rem; }
+    .skills .skills-icons .skills-row .skill .skill-icon {
+      width: 30px; } }
+
 @media (max-width: 420px) {
   .nav__max-width-container {
     padding: 0 15px; }
@@ -196,4 +238,10 @@ a {
     .projects__max-width-container .project {
       flex-direction: column; }
       .projects__max-width-container .project__buttons {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem; }
+  .skills__max-width-container {
+    padding: 30px 15px; }
+  .skills .skills-icons .skills-row .skill {
+    font-size: 1rem; }
+    .skills .skills-icons .skills-row .skill .skill-icon {
+      width: 26px; } }
