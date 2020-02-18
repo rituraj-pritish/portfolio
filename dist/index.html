@@ -12,7 +12,7 @@
       <div class="nav__max-width-container nav-transparent">
         <div class="nav__logo">
           <a href="/portfolio">
-            <img src="assets/logo.svg" />
+            <img src="assets/icons/logo.svg" />
           </a>
         </div>
         <div class="nav__links">
@@ -27,7 +27,7 @@
             class="icon-link"
             target="_blank"
           >
-            <img src="assets/github-logo.svg" />
+            <img src="assets/icons/github-logo.svg" />
           </a>
 
           <a
@@ -35,7 +35,7 @@
             target="_blank"
             class="icon-link"
           >
-            <img src="assets/linkedin-logo.svg" />
+            <img src="assets/icons/linkedin-logo.svg" />
           </a>
         </div>
       </div>
@@ -43,7 +43,7 @@
       <div class="nav__max-width-container nav-colored">
         <div class="nav__logo">
           <a href="/portfolio">
-            <img src="assets/logo-blue.svg" />
+            <img src="assets/icons/logo-blue.svg" />
           </a>
         </div>
         <div class="nav__links">
@@ -58,7 +58,7 @@
             class="icon-link"
             target="_blank"
           >
-            <img src="assets/github-logo-black.svg" />
+            <img src="assets/icons/github-logo-black.svg" />
           </a>
 
           <a
@@ -66,7 +66,7 @@
             target="_blank"
             class="icon-link"
           >
-            <img src="assets/linkedin-logo-black.svg" />
+            <img src="assets/icons/linkedin-logo-black.svg" />
           </a>
         </div>
       </div>
@@ -75,7 +75,7 @@
     <section class="header">
       <div class="header__content">
         Hello,<br />
-        My name is <span class="text-primary">Rituraj Pritish</span>.<br />
+        My name is <span>Rituraj Pritish</span>.<br />
         I am a full stack developer.<br />
         <button href="#projects" id="view-my-work-btn" class="btn btn-primary">
           View my Work
@@ -85,13 +85,20 @@
 
     <section class="projects" id="projects">
       <div class="projects__max-width-container">
-
         <div class="project">
-          <img src="assets/img.jpeg" alt="img" class="project__image" />
+          <img
+            src="assets/images/fashion.png"
+            alt="fashion.co"
+            class="project__image"
+          />
           <div class="project__overview">
             <div class="project__name">Fashion.co</div>
-            <div class="project__about">A clothing e-commerce web-app</div>
-            <div class="project__stack">React, Redux</div>
+            <div class="project__about">
+              A fully functional clothing e-commerce web-app
+            </div>
+            <div class="project__stack">
+              React | Redux | Styled Components | Firebase
+            </div>
             <div class="project__buttons">
               <a
                 href="https://fashion-fashion.herokuapp.com/"
@@ -111,11 +118,20 @@
         <div class="project-divider"></div>
 
         <div class="project">
-          <img src="assets/img.jpeg" alt="img" class="project__image" />
+          <img
+            src="assets/images/blogg.png"
+            alt="blogg"
+            class="project__image"
+          />
           <div class="project__overview">
             <div class="project__name">Blogg</div>
-            <div class="project__about">Blog application.</div>
-            <div class="project__stack">React, Redux</div>
+            <div class="project__about">
+              Browse trending and popular blogs. Write and update blogs. Like
+              and comment on other blogs.
+            </div>
+            <div class="project__stack">
+              React | Redux | Node | Express | GraphQL | MongoDB
+            </div>
             <div class="project__buttons">
               <a
                 href="https://blogg-blogg-blogg.herokuapp.com/"
@@ -135,13 +151,19 @@
         <div class="project-divider"></div>
 
         <div class="project">
-          <img src="assets/img.jpeg" alt="img" class="project__image" />
+          <img
+            src="assets/images/watchit.png"
+            alt="watchit"
+            class="project__image"
+          />
           <div class="project__overview">
             <div class="project__name">WATCHit</div>
             <div class="project__about">
-              A movie and tv shows browsing application.
+              Browse your favorite Movies, TV shows, and actors. Search for
+              specific movies, shows or actors. Save favorites and add to
+              watchlist.
             </div>
-            <div class="project__stack">React, Redux</div>
+            <div class="project__stack">React | Redux | TMDB API</div>
             <div class="project__buttons">
               <a
                 href="http://watchit-watchit.herokuapp.com/"
@@ -161,7 +183,31 @@
       </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__max-width-container">
+        <div class="footer__brief">
+          
+          <div class="footer__about">
+          <h2>About Me</h2>
+          Hello there! My name is Rituraj Pritish and I'm a Full Stack Developer.
+          </br>
+          </br>
+          I enjoy spending my free time learning and increasing my knowledge of Web Development and building new and challenging projects.
+          </br>
+          </br>
+          I am always excited to learn new things. The most valuable thing I can provide to your company is the ability to be molded to your stack.
+          </br>
+          </br>
+          Let's build something special.
+          </div>
+
+          <div class="footer__contact">
+            Email: pritishrituraj@gmail.com
+          </div>
+        </div>
+        <div class="footer__copyright">&copy; 2020 RITURAJ PRITISH</div>
+      </div>
+    </footer>
   </body>
 
   <script src="main.js"></script>
