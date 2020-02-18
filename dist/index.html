@@ -9,15 +9,15 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__max-width-container">
+      <div class="nav__max-width-container nav-transparent">
         <div class="nav__logo">
-          <a href="/">
-            <img src="/dist/assets/logo.svg" />
+          <a href="/portfolio">
+            <img src="assets/logo.svg" />
           </a>
         </div>
         <div class="nav__links">
           <a
-            href="/dist/assets/img.jpeg"
+            href="assets/Rituraj-Pritish-resume.pdf"
             class="btn btn-secondary resume-btn"
             target="_blank"
             >Resume</a
@@ -27,7 +27,7 @@
             class="icon-link"
             target="_blank"
           >
-            <img src="/dist/assets/github-logo.svg" />
+            <img src="assets/github-logo.svg" />
           </a>
 
           <a
@@ -35,7 +35,38 @@
             target="_blank"
             class="icon-link"
           >
-            <img src="/dist/assets/linkedin-logo.svg" />
+            <img src="assets/linkedin-logo.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="nav__max-width-container nav-colored">
+        <div class="nav__logo">
+          <a href="/portfolio">
+            <img src="assets/logo-blue.svg" />
+          </a>
+        </div>
+        <div class="nav__links">
+          <a
+            href="assets/Rituraj-Pritish-resume.pdf"
+            class="btn btn-secondary resume-btn"
+            target="_blank"
+            >Resume</a
+          >
+          <a
+            href="https://github.com/rituraj-pritish"
+            class="icon-link"
+            target="_blank"
+          >
+            <img src="assets/github-logo-black.svg" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/rituraj-pritish-6197441a2"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="assets/linkedin-logo-black.svg" />
           </a>
         </div>
       </div>
@@ -46,16 +77,17 @@
         Hello,<br />
         My name is <span class="text-primary">Rituraj Pritish</span>.<br />
         I am a full stack developer.<br />
-        <a href="#projects" class="btn btn-primary">
+        <button href="#projects" id="view-my-work-btn" class="btn btn-primary">
           View my Work
-        </a>
+        </button>
       </div>
     </section>
 
     <section class="projects" id="projects">
       <div class="projects__max-width-container">
+
         <div class="project">
-          <img src="/dist/assets/img.jpeg" alt="img" class="project__image" />
+          <img src="assets/img.jpeg" alt="img" class="project__image" />
           <div class="project__overview">
             <div class="project__name">Fashion.co</div>
             <div class="project__about">A clothing e-commerce web-app</div>
@@ -76,9 +108,61 @@
             </div>
           </div>
         </div>
+        <div class="project-divider"></div>
+
+        <div class="project">
+          <img src="assets/img.jpeg" alt="img" class="project__image" />
+          <div class="project__overview">
+            <div class="project__name">Blogg</div>
+            <div class="project__about">Blog application.</div>
+            <div class="project__stack">React, Redux</div>
+            <div class="project__buttons">
+              <a
+                href="https://blogg-blogg-blogg.herokuapp.com/"
+                class="btn btn-primary"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/rituraj-pritish/blogg"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-divider"></div>
+
+        <div class="project">
+          <img src="assets/img.jpeg" alt="img" class="project__image" />
+          <div class="project__overview">
+            <div class="project__name">WATCHit</div>
+            <div class="project__about">
+              A movie and tv shows browsing application.
+            </div>
+            <div class="project__stack">React, Redux</div>
+            <div class="project__buttons">
+              <a
+                href="http://watchit-watchit.herokuapp.com/"
+                class="btn btn-primary"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/rituraj-pritish/WATCHit"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer"></footer>
   </body>
+
+  <script src="main.js"></script>
 </html>
