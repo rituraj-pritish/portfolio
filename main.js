@@ -24,13 +24,13 @@ const navScrollHandler = () => {
   if (scrollOffset > headerHeight) {
     transparentNav.style.display = 'none';
     coloredNav.style.display = 'flex';
-    nav.style.borderColor = 'grey';
+    nav.style.borderBottom = '1px solid grey';
   }
 
   if (scrollOffset < headerHeight) {
     transparentNav.style.display = 'flex';
     coloredNav.style.display = 'none';
-    nav.style.borderColor = '#d8d8d8';
+    nav.style.borderBottom = '1px solid #d8d8d8';
   }
 };
 navScrollHandler();
