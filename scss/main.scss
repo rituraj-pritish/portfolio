@@ -130,6 +130,7 @@ body {
 
       &__image {
         width: 30%;
+        min-width: 30%;
       }
 
       &__overview {
@@ -182,7 +183,7 @@ body {
   }
 
   .skills-icons {
-    width: fit-content;
+    width: max-content;
     margin: 0 auto;
 
     .skills-row {
@@ -245,7 +246,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: fit-content;
+    width: max-content;
 
     .section-title-line {
       margin: 0 3rem;
