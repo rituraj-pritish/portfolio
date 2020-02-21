@@ -88,7 +88,8 @@ body {
       width: 100%;
       margin: 4rem 0; }
       .projects__max-width-container .project__image {
-        width: 30%; }
+        width: 30%;
+        min-width: 30%; }
       .projects__max-width-container .project__overview {
         display: flex;
         flex-direction: column;
@@ -120,7 +121,7 @@ body {
     padding: 30px;
     margin: 0 auto; }
   .skills .skills-icons {
-    width: fit-content;
+    width: max-content;
     margin: 0 auto; }
     .skills .skills-icons .skills-row {
       display: flex;
@@ -165,7 +166,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: fit-content; }
+    width: max-content; }
     .section-title-container .section-title .section-title-line {
       margin: 0 3rem;
       width: 150px;
