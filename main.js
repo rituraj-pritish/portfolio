@@ -18,9 +18,6 @@ const coloredNav = document.querySelector('.nav-colored');
 const header = document.querySelector('.header');
 const headerHeight = header.scrollHeight;
 
-const yearEl = document.querySelector('.current-year');
-yearEl.innerHTML = new Date().getFullYear()
-
 const navScrollHandler = () => {
   const scrollOffset = window.pageYOffset;
 
@@ -38,4 +35,10 @@ const navScrollHandler = () => {
 };
 navScrollHandler();
 
+window.onload = () => {
+  const yearEl = document.querySelector('.current-year');
+  yearEl.innerHTML = new Date().getFullYear();
+}
+
 document.addEventListener('scroll', navScrollHandler);
+
