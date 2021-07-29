@@ -75,12 +75,15 @@
 
     <section class="header">
       <div class="header__content">
-        Hello,<br />
-        My name is <span>Rituraj Pritish</span>.<br />
-        I am a full stack developer.<br />
-        <button href="#projects" id="view-my-work-btn" class="btn btn-primary">
-          View my Work
-        </button>
+        <div class='header__heading'>
+          Full stack developer
+        </div>
+        Hi, My name is <span class='header__name'>Rituraj Pritish</span>.<br />
+        <div class="header__btn-wrapper">
+          <button href="#projects" id="view-my-work-btn" class="btn btn-primary">
+            View my Work
+          </button>
+        </div>
       </div>
     </section>
 
@@ -109,7 +112,7 @@
               A fully functional clothing e-commerce web-app
             </div>
             <div class="project__stack">
-              React | Redux | Styled Components | Firebase
+              React | Redux | Firebase
             </div>
             <div class="project__buttons">
               <a
@@ -120,6 +123,37 @@
               >
               <a
                 href="https://github.com/rituraj-pritish/fashion-ecom"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-divider"></div>
+
+        <div class="project">
+          <img
+            src="assets/images/watchbox.webp"
+            alt="watchbox"
+            class="project__image"
+          />
+          <div class="project__overview">
+            <div class="project__name">WatchBox</div>
+            <div class="project__about">
+              Browse your favorite Movies, TV shows, and actors. Save favorites and add to
+              watchlist.
+            </div>
+            <div class="project__stack">React | TMDB API</div>
+            <div class="project__buttons">
+              <a
+                href="https://watchbox-watchbox.herokuapp.com/"
+                class="btn btn-primary"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/rituraj-pritish/watchbox"
                 class="btn btn-primary"
                 target="_blank"
                 >View Code</a
@@ -160,38 +194,7 @@
             </div>
           </div>
         </div>
-        <div class="project-divider"></div>
 
-        <div class="project">
-          <img
-            src="assets/images/watchit.webp"
-            alt="watchit"
-            class="project__image"
-          />
-          <div class="project__overview">
-            <div class="project__name">WATCHit</div>
-            <div class="project__about">
-              Browse your favorite Movies, TV shows, and actors. Search for
-              specific movies, shows or actors. Save favorites and add to
-              watchlist.
-            </div>
-            <div class="project__stack">React | Redux | TMDB API</div>
-            <div class="project__buttons">
-              <a
-                href="http://watchit-watchit.herokuapp.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/rituraj-pritish/WATCHit"
-                class="btn btn-primary"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     
@@ -231,8 +234,8 @@
               React
             </div>
             <div class="skill">
-              <img src="assets/icons/redux.png" alt="redux" class="skill-icon">
-              Redux
+              <img src="assets/icons/react.png" alt="react" class="skill-icon">
+              React Native
             </div>
           </div>
 
