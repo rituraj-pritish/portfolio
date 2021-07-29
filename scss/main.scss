@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-$color-primary: #3f72af;
+$color-primary: #4191ff;
 $color-black: #2d2d2d;
 $color-white: #ffffff;
 $color-grey-light: #636363;
@@ -98,18 +98,39 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
+  &__heading {
+    font-size: 6rem;
+    text-transform: uppercase;
+    word-spacing: 0.2rem;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+
   &__content {
     font-size: 4rem;
     color: $color-white;
 
+  .header__btn-wrapper {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
     button {
       background: #eee;
-      color: $color-black;
+      color: $color-primary;
       font-weight: 100;
       font-size: 2.5rem;
       padding: 1.5rem 3rem;
       letter-spacing: 0.3rem;
-      margin-top: 3rem;
+
+      &:hover {
+        background: #6ba9fe;
+        color: white;
+      }
     }
   }
 }
@@ -268,15 +289,18 @@ a {
 
 .btn {
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 10px -2px #00000069;
 
   &:active,
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    background: #357de1;
   }
 }
 
@@ -294,14 +318,27 @@ a {
 
 //media queries
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
+  .header__heading {
+    font-size: 4rem;
+  }
+
   .header__content {
     font-size: 3rem;
+  
+  .header__btn-wrapper {
+    margin-top: 2rem;
+  }
 
-    button {
-      font-size: 2rem;
-      padding: 1rem 2rem;
-    }
+  button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  }
+
+  .project__buttons {
+    margin-left: auto;
   }
 
   .projects {
@@ -334,7 +371,15 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+  .header__heading {
+    font-size: 3rem;
+  }
+
+  .header__content {
+    font-size: 2.5rem;
+  }
+
   .section-title-container {
     .section-title {
       .section-title-line {
@@ -363,14 +408,18 @@ a {
       padding: 0 15px;
     }
   }
+  .header__heading {
+    font-size: 2.2rem;
+  }
 
   .header {
     &__content {
       padding: 0 15px;
-      font-size: 2rem;
+      font-size: 1.7rem;
 
       button {
-        font-size: 1.5rem;
+        padding: 1.3rem;
+        font-size: 1.8rem;
       }
     }
   }
