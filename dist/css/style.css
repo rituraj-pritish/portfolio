@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +8,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #2d2d2d;
@@ -44,6 +44,8 @@ body {
       color: white; }
       .nav__links .icon-link:last-child {
         margin-right: 0; }
+  .nav .resume-btn:hover {
+    background: initial; }
   .nav .nav-transparent {
     background: transparent; }
     .nav .nav-transparent .resume-btn {
@@ -70,13 +72,18 @@ body {
     word-spacing: 0.2rem; }
   .header__name {
     text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 0.5rem; }
   .header__content {
     font-size: 4rem;
     color: #ffffff; }
+    .header__content .header__subheading {
+      font-size: 3rem; }
     .header__content .header__btn-wrapper {
       width: 100%;
-      margin-top: 3rem; }
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-end; }
     .header__content button {
       background: #eee;
       color: #4191ff;
@@ -218,6 +225,8 @@ a {
     font-size: 4rem; }
   .header__content {
     font-size: 3rem; }
+    .header__content .header__subheading {
+      font-size: 2.5rem; }
     .header__content .header__btn-wrapper {
       margin-top: 2rem; }
     .header__content button {
@@ -226,6 +235,9 @@ a {
       width: 100%; }
   .project__buttons {
     margin-left: auto; }
+    .project__buttons > a {
+      margin-right: 0 !important;
+      margin-left: 2rem; }
   .projects__max-width-container .project {
     flex-direction: column; }
     .projects__max-width-container .project__image {
@@ -250,17 +262,20 @@ a {
     .skills .skills-icons .skills-row .skill .skill-icon {
       width: 30px; } }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   .nav__max-width-container {
     padding: 0 15px; }
   .header__heading {
     font-size: 2.2rem; }
   .header__content {
     padding: 0 15px;
-    font-size: 1.7rem; }
+    font-size: 1.4rem; }
+    .header__content .header__subheading {
+      font-size: 1.2rem; }
     .header__content button {
-      padding: 1.3rem;
-      font-size: 1.8rem; }
+      margin-top: 0;
+      padding: 1rem auto;
+      font-size: 1.5rem; }
   .projects__max-width-container {
     padding: 0 15px; }
     .projects__max-width-container .project {
