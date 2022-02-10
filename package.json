@@ -11,7 +11,7 @@
   "license": "ISC",
   "homepage": "https://rituraj-pritish.github.io/portfolio",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "gh-pages": "^2.2.0"
