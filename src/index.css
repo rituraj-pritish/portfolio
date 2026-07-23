@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  overflow-x: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+
+  .navbarContent {
+    position: sticky;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+
+    a {
+      display: block;
+      padding: 16px 24px;
+      text-decoration: none;
+      color: #282828;
+
+      &.active {
+        background: #aa2bff;
+        color: white;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+}
+
+.githubLinks {
+  display: flex;
+  align-items: center;
+  align-self: end;
+
+  border: 1px solid #000;
+  padding: 4px 16px;
+  border-radius: 8px;
+
+  img {
+    width: 100px;
+    margin-left: 24px;
+  }
+
+  a {
+    color: black;
+    margin: 0 16px;
+  }
+}
+
+.project {
+  min-width: 100vw;
+  height: calc(100vh - 51px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  .projectHeader {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    width: 70%;
+    margin-bottom: 24px;
+    margin-top: 32px;
+
+    h3 {
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .projectLink {
+    width: 70%;
+    position: relative;
+
+    &:hover .projectOverlay {
+      visibility: visible;
+    }
+
+    .projectImg {
+      width: 100%;
+    }
+
+    .projectOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #aa2bff;
+        color: white;
+        opacity: 0.85;
+        font-size: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          margin-left: 8px;
+          margin-top: -2px;
+
+          path {
+            fill: white;
+          }
+        }
+
+        visibility: hidden;
+      }
+  }
+
+  .projectDescription {
+    margin-top: 24px;
+  }
+}
